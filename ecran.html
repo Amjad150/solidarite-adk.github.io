@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=10">
+    <link rel="stylesheet" href="./style2.css">
+    <title>SOLIDARITE</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="global" id="global">
+                <li id="solidarite">SOLIDARITE(A.D.K)</li>
+                <li id="ligne"><a href="#Infos">Infos</a></li>
+                <li id="ligne"><a href="#Historique">Historique</a></li>
+                <li id="ligne"><a href="#Contact">Contact</a></li>
+            </ul>    
+        </nav>
+        <div class="imagePrincipale">
+            <p id="imagePrincipale"></p>
+            <h1 class="ml15">
+              <span class="word">solidarite</span>
+              <span class="word">entre</span>
+              <span class="word">nous</span>
+              <span class="word">(a.d.k)</span>
+            </h1>
+            <!-- <h1>Solidarite</h1>
+            <h1>entre</h1>
+            <h1>nous</h1>
+            <h1>(A.D.K)</h1> -->
+        </div>
+    </header>
+    <section id="Historique">
+        <h1>
+            Historique
+        </h1>
+        <p>Tout commence en 2019 lors d'une rencontre amicale où est née l'idée de mettre en place une association ou organisation pouvant regrouper l'ensemble des jeunes du qurtier (LANGOU THIASKI). Cette idée fut saluer tres vite par l'ensemble des jeunes y compris les ainés qui l'ont qualifié de moyen de rasssemblement des jeunes au tour d'un objectif defini, ce qui renforce les liens amicals et familials.</p>
+        <p>Alors, c'est ainsi qu'une reunion a été organisé en decembre 2019 afin de concretiser l'idée avec l'ensemble des concernés. Ce fut comme prévu,l'association a été baptisé SOLIDARITE ENTRE NOUS et des objectifs ont été établis: cotiser chaque mois 250F CFA avec une inscription de 250F dés Janvier 2020, assister, aider, investir.<br> D'autre reunion ont été tenu notamant en 2021 et 2022. Ce n'est que lors de cette derniere q'un bureau a été élu sur la base des reglements interieurs bien établis.
+        </p>
+    </section>
+    <section id="Infos">
+        <div class="activite" id="activite">
+            <h1>
+                reglements Interieurs
+            </h1>
+            <ul>
+              <li>Tout membre voulant occuper un poste doit au préalable etre a jour sur les cotisations</li>
+              <li>Tout membre n'ayant pas cotisé 5 mois consécutifs devra payer 500f de plus</li>
+              <li>Tout membre du bureau n'ayant pas cotisé 3 mois consécutifs perd son poste et payera 500f de plus</li>
+              <li>Le renouvellement du bureau se tient chaque 'TABASKI'.</li>
+              <li>Tout membre a droit a l'information</li>
+              <li>Tout membre du bureau voulant demisssionner est tenu d'informer le groupe avec une presentation de motifs valables.</li>
+              <li>Une reunion en ligne (whatsApp) doit se tenir chaque 2 mois</li>
+              <li>Un objectif annuel est recommandé pour chaque année</li>
+
+            </ul>
+
+        </div>
+        <div class="cotisations" id="cotisations">
+            <h1>
+                cotisations
+            </h1>
+            <center>
+              <table border="20" width="400">
+                <caption>Cotisations 2020 2021 2022</caption>
+                <tr>
+                  <td>An/mod</td>
+                  <td>N Participants</td>
+                  <td>Sommes</td>
+                </tr>
+                <tr>
+                  <td><h2>2020</h2></td>
+                  <td>33 personnes</td>
+                  <td>62 750f CFA</td>
+                </tr>
+                <tr>
+                  <td><h2>2021</h2></td>
+                  <td>10 personnes</td>
+                  <td>18 500f CFA</td>
+                </tr>
+                <tr>
+                  <td><h2>2022</h2></td>
+                  <td>4 personnes</td>
+                  <td>9 750f CFA</td>
+                </tr>
+              </table>
+            </center>
+        </div>
+    </section>
+    <div>
+        <center>
+            <canvas id="graph"></canvas>
+        </center>
+        <div>
+            <canvas id="myChart1"></canvas>
+        </div>
+      </div>
+    <footer>
+        <div class="Contact" id="Contact">
+          <h3>Pour vos questions</h3>
+            <form action="" name="frm" id="form">
+                <label for="prenom"></label>
+                <input type="text" id="prenom" placeholder="prenom">
+                <label for="tel"></label>
+                <input type="number" id="tel" placeholder="numero">
+                <textarea name="area" id="area" placeholder="votre question ici"></textarea>
+                <button type="submit" id="envoyer">Envoyer</button>
+            </form>
+        </div>
+        <div class="appeler">
+            <h5>Nous appeler au 77 230 76 40 ou au 77 926 85 60</h5>
+        </div>
+    </footer>
+
+    <!-- <script>
+       const myChart = document.getElementById('myChart').getContext('2d')
+ let graph = new Chart(myChart, {
+     type: 'line',
+     data: {
+         labels: [
+             "2020",
+             "2021",
+             "2022",
+         ],
+         datasets: [
+             {
+                 label: "Cotisations en millier",
+                 data: [62.750, 18.5, 9.750]
+             }
+         ],
+         Option: {
+            titte: {
+                display: true,
+                text: "Evolution des cotisations",
+                fontSize: 24,
+            },
+         },
+
+     },
+ });
+
+    </script> -->
+    
+
+
+      <!-- <script>
+      const ctx = document.getElementById('myChart');
+      
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['2020', '2021', '2022',],
+          datasets: [{
+            label: 'Cotisations en milliers',
+            data: [62.750, 18.5, 9.750,],
+            borderWidth: 1
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true
+            }
+          }
+        }
+      });
+      </script> -->
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- 
+      <script>
+        const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+              label: '# of Votes',
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script> -->
+
+      <div id="lineDrawing"> <svg viewBox="0 0 280 100">
+        <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="lines">
+          <path d="M58 80V50.12C57.7 41.6 51.14 35 43 35a15 15 0 0 0 0 30h7.5v15H43a30 30 0 1 1 0-60c16.42 0 29.5 13.23 30 29.89V80H58z" stroke-dasharray="316.85528564453125" style="stroke-dashoffset: 0px;"></path>
+          <path d="M73 80V20H58v60h15z" stroke-dasharray="150" style="stroke-dashoffset: 0px;"></path>
+          <path d="M58 80V49.77C58.5 33.23 71.58 20 88 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80H58zm75 0V20h-15v60h15z" stroke-dasharray="441.1739501953125" style="stroke-dashoffset: 1.38472px;"></path>
+          <path d="M118 80V49.77C118.5 33.23 131.58 20 148 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80h-15zm-7.5-60a7.5 7.5 0 1 1-7.48 8v-1c.25-3.9 3.5-7 7.48-7z" stroke-dasharray="338.3053894042969" style="stroke-dashoffset: 26.8616px;"></path>
+          <path d="M133 65a15 15 0 0 1-15-15v-7.5h-15V50a30 30 0 0 0 30 30V65zm30 15V49.77C163.5 33.23 176.58 20 193 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80h-15z" stroke-dasharray="406.8699035644531" style="stroke-dashoffset: 106.985px;"></path>
+          <path d="M238 65a15 15 0 0 1 0-30c8.1 0 14.63 6.53 15 15h-15v15h30V49.89C267.5 33.23 254.42 20 238 20a30 30 0 0 0 0 60V65z" stroke-dasharray="301.8561706542969" style="stroke-dashoffset: 161.294px;"></path>
+          <path d="M260.48 65a7.5 7.5 0 1 1-7.48 8v-1c.26-3.9 3.5-7 7.48-7z" stroke-dasharray="47.128875732421875" style="stroke-dashoffset: 37.3297px;"></path>
+        </g>
+      </svg> </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+      <script src="./node_modules/animejs/lib/anime.min.js"></script>
+    <script src="./console2.js" defer></script>
+
+
+</body>
+</html>
